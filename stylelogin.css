@@ -1,0 +1,175 @@
+/* Reset and Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 100%;
+}
+
+/* Background Style */
+.background {
+  background: url('bg Unv.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Container */
+.login-container {
+  margin-top: -40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; /* Membuat kotak lebih melengkung */
+  padding: 45px 29px;
+  text-align: center;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(4, 107, 225, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 0px;
+  margin-top:-5px ;
+  left: 210px; /* Dipindahkan ke pojok kiri atas */
+  background: none;
+  border: none;
+  color: #d3d1d1;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Logo Image */
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-top: -40px;
+  object-fit: contain; /* Memastikan logo tetap proporsional */
+}
+
+/* Title Styles */
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  margin-top: -40px;
+}
+
+.title .highlight {
+  color: #007bff;
+}
+
+/* Input Styles */
+.input-box {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(255, 252, 252, 0.5);
+  border-radius: 5px; /* Membuat kotak input lebih rapi */
+  font-size: 16px;
+  color: #ffffff;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Placeholder Text Styling */
+.input-box::placeholder {
+  color: rgba(255, 252, 252, 0.7);
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 14px; /* Sama dengan input box */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Standard Login Button */
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 150px;
+}
+
+/* Google and Apple Sign-In Buttons */
+.google-button, .apple-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  background: transparent;
+  border: 2px solid rgba(255, 252, 252, 0.5);
+  border-radius: 5px;
+  padding: 14px; /* Konsisten dengan input box */
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.google-button img, .apple-button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 100px;
+  margin-right:10px;
+ 
+}
+
+/* Default Sign In Button */
+.sign-in-button {
+  background-color: #007bff;
+  color: white;
+  margin-top: -3px;
+  margin: 0px;
+  border-radius: 150px;
+}
+
+/* Hover Effects */
+.google-button:hover, .apple-button:hover, .login-button:hover, .sign-in-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Divider */
+.divider {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 10px;
+}
+
+/* Forgot Link */
+.forgot-link {
+  color: #007bff;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+}

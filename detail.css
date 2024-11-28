@@ -1,0 +1,434 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title Styles */
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: black;
+}
+
+header h1 span {
+  color: rgb(5, 101, 254);
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 1115px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin-right: 40px;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar .search-button {
+  padding: 6px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:0px;
+  border-radius: 0 20px 20px 0;
+}
+
+.search-bar .search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+main {
+  margin-top: 80px;
+  padding: 20px;
+  padding-left: 120px;
+}
+
+.product {
+  display: flex;
+  gap: 20px;
+}
+
+.product-image img {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h2 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 5px;
+  padding-left: 90px;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  padding-left: 90px;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: black;
+  padding-left: 90px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  padding-left: 90px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+button.buy {
+  
+  background-color: red;
+  color: white;
+}
+
+button.save {
+  background-color: blue;
+  color: white;
+}
+
+/* Rating & Review Section */
+.rating-review {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding-left: 90px;
+}
+
+.rating {
+  flex: 1;
+}
+
+.rating h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.rating .stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgb(246, 246, 246);
+}
+
+.rating .stars span {
+  margin-right: 10px;
+  color: #777;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background: #8b8686;
+}
+
+.reviews {
+  flex: 1;
+}
+
+.reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews .review-item {
+  margin-bottom: 10px;
+}
+
+.reviews strong {
+  display: block;
+  font-weight: bold;
+}
+
+.reviews span.time {
+  font-size: 12px;
+  color: #777;
+}
+
+.reviews a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product {
+      flex-direction: column;
+  }
+
+  .rating-review {
+      flex-direction: column;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: rgb(253, 18, 18);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom:-9px;
+  text-align: left;
+}
+
+.card .price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: -90px;
+  color: #333;
+  text-align: left;
+}
+
+.card .rating {
+  color: #fafafa; /* Warna emas untuk bintang */
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: -10px;
+  
+}
+
+/* Tombol */
+.card .btn {
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  padding: 10px 20px;
+  font-size: 5px;
+  color: #fff;
+  background-color: #1d7fe9;
+
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #226fc1;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer page */
+footer {
+  font-size: 0.9rem;
+  background-color: #F5F5F5;
+  color: white;
+  padding: 1rem 0;
+}
+.footer {
+  background-color: #002F6C;
+  color: #ffffff;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 1,0px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  border-bottom: 2px solid #f1f1f1;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  width: 0px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 15px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-payment {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.footer-payment h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-payment img {
+  width: 50px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ffffff;
+  font-size: 11px;
+  border-width:1px;
+  margin-top: 10px; /* Menurunkan garis ke bawah */
+}
+
+.footer-bottom p {
+  margin: 0;
+  margin-top: 0px;
+}
